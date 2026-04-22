@@ -1,0 +1,101 @@
+.aja-tab {
+  padding: 0.75rem;
+  overflow-y: auto;
+}
+
+.aja-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.aja-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.aja-buttons button,
+.aja-row button {
+  cursor: pointer;
+}
+
+.aja-warning {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border-light-secondary);
+  border-radius: 6px;
+  background: color-mix(in oklab, var(--color-bg-option) 75%, transparent);
+}
+
+.aja-grid,
+.aja-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 130px minmax(300px, 2fr) 56px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.aja-grid-head {
+  font-weight: 600;
+  margin: 0.75rem 0;
+  padding: 0 0.25rem;
+}
+
+.aja-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aja-row {
+  padding: 0.5rem;
+  border: 1px solid var(--color-border-light-secondary);
+  border-radius: 8px;
+}
+
+.aja-cell,
+.aja-cell input,
+.aja-cell label {
+  width: 100%;
+}
+
+.aja-target {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.aja-path {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+}
+
+.aja-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.aja-help {
+  margin-top: 1rem;
+}
+
+.aja-help pre {
+  overflow-x: auto;
+}
+
+.aja-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aja-picker select {
+  min-height: 22rem;
+}

@@ -1,0 +1,70 @@
+<section class="tab aja-tab" data-group="primary" data-tab="{{tabKey}}">
+  <div class="aja-header">
+    <div>
+      <h3>{{localize "actor-jb2a-animations.tab.header"}}</h3>
+      <p class="notes">{{localize "actor-jb2a-animations.tab.description"}}</p>
+    </div>
+    <div class="aja-buttons">
+      <button type="button" data-action="add-animation">
+        <i class="fa-solid fa-plus"></i>
+        {{localize "actor-jb2a-animations.actions.add"}}
+      </button>
+      <button type="button" data-action="save-animations" class="primary">
+        <i class="fa-solid fa-floppy-disk"></i>
+        {{localize "actor-jb2a-animations.actions.save"}}
+      </button>
+    </div>
+  </div>
+
+  {{#unless hasSequencer}}
+    <p class="aja-warning">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      {{localize "actor-jb2a-animations.warnings.noSequencer"}}
+    </p>
+  {{/unless}}
+
+  {{#unless hasJB2A}}
+    <p class="aja-warning">
+      <i class="fa-solid fa-circle-info"></i>
+      {{localize "actor-jb2a-animations.warnings.noJB2A"}}
+    </p>
+  {{/unless}}
+
+  <div class="aja-grid aja-grid-head">
+    <div>{{localize "actor-jb2a-animations.columns.name"}}</div>
+    <div>{{localize "actor-jb2a-animations.columns.target"}}</div>
+    <div>{{localize "actor-jb2a-animations.columns.path"}}</div>
+    <div>{{localize "actor-jb2a-animations.columns.actions"}}</div>
+  </div>
+
+  <div data-animation-list class="aja-list">
+    {{#each animations}}
+      <div class="aja-row" data-id="{{this.id}}">
+        <div class="aja-cell aja-name">
+          <input type="text" name="name" value="{{this.name}}" placeholder="{{localize 'actor-jb2a-animations.fields.name.placeholder'}}">
+        </div>
+        <label class="aja-cell aja-target checkbox">
+          <input type="checkbox" name="hasTarget" {{checked this.hasTarget}}>
+          <span>{{localize "actor-jb2a-animations.fields.hasTarget.label"}}</span>
+        </label>
+        <div class="aja-cell aja-path">
+          <input type="text" name="path" value="{{this.path}}" placeholder="jb2a.magic_missile.blue">
+          <button type="button" class="icon" data-action="browse-jb2a" title="{{localize 'actor-jb2a-animations.actions.pick'}}">
+            <i class="fa-solid fa-folder-tree"></i>
+          </button>
+        </div>
+        <div class="aja-cell aja-actions">
+          <button type="button" class="icon danger" data-action="remove-row" title="{{localize 'actor-jb2a-animations.actions.remove'}}">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  <div class="aja-help">
+    <h4>{{localize "actor-jb2a-animations.help.title"}}</h4>
+    <pre><code>await ActorJB2AAnimations.playAnimationByName(token.actor, "Magic Missile", token, game.user.targets.first());</code></pre>
+    <pre><code>await ActorJB2AAnimations.playAnimationByIndex(token.actor, 0, token);</code></pre>
+  </div>
+</section>

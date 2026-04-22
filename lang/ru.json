@@ -1,0 +1,22 @@
+{
+  "actor-jb2a-animations.tab.title": "Анимации",
+  "actor-jb2a-animations.tab.header": "JB2A анимации актёра",
+  "actor-jb2a-animations.tab.description": "Сохраняйте именованные пути JB2A / Sequencer для этого актёра и проигрывайте их позже через макросы.",
+  "actor-jb2a-animations.columns.name": "Название",
+  "actor-jb2a-animations.columns.target": "Цель?",
+  "actor-jb2a-animations.columns.path": "Путь JB2A / Sequencer",
+  "actor-jb2a-animations.columns.actions": "",
+  "actor-jb2a-animations.fields.name.placeholder": "Magic Missile",
+  "actor-jb2a-animations.fields.hasTarget.label": "Нужна цель",
+  "actor-jb2a-animations.actions.add": "Добавить анимацию",
+  "actor-jb2a-animations.actions.save": "Сохранить",
+  "actor-jb2a-animations.actions.remove": "Удалить",
+  "actor-jb2a-animations.actions.pick": "Выбрать из Sequencer DB",
+  "actor-jb2a-animations.notifications.saved": "Анимации актёра сохранены",
+  "actor-jb2a-animations.notifications.noDatabase": "В базе Sequencer не найдено записей JB2A.",
+  "actor-jb2a-animations.warnings.noSequencer": "Sequencer не активен. Вкладка будет сохранять данные, но макросы воспроизведения не заработают, пока Sequencer не включён.",
+  "actor-jb2a-animations.warnings.noJB2A": "Активный модуль JB2A не обнаружен. При этом путь Sequencer можно ввести вручную.",
+  "actor-jb2a-animations.help.title": "Примеры макросов",
+  "actor-jb2a-animations.picker.title": "Выбор JB2A анимации",
+  "actor-jb2a-animations.picker.hint": "Отфильтруйте и выберите путь из базы Sequencer, начинающийся с jb2a."
+}

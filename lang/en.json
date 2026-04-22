@@ -1,0 +1,22 @@
+{
+  "actor-jb2a-animations.tab.title": "Animations",
+  "actor-jb2a-animations.tab.header": "Actor JB2A Animations",
+  "actor-jb2a-animations.tab.description": "Store named JB2A / Sequencer database paths on this actor and play them later from macros.",
+  "actor-jb2a-animations.columns.name": "Name",
+  "actor-jb2a-animations.columns.target": "Target?",
+  "actor-jb2a-animations.columns.path": "JB2A / Sequencer Path",
+  "actor-jb2a-animations.columns.actions": "",
+  "actor-jb2a-animations.fields.name.placeholder": "Magic Missile",
+  "actor-jb2a-animations.fields.hasTarget.label": "Needs target",
+  "actor-jb2a-animations.actions.add": "Add animation",
+  "actor-jb2a-animations.actions.save": "Save",
+  "actor-jb2a-animations.actions.remove": "Remove",
+  "actor-jb2a-animations.actions.pick": "Pick from Sequencer DB",
+  "actor-jb2a-animations.notifications.saved": "Actor animations saved",
+  "actor-jb2a-animations.notifications.noDatabase": "No JB2A entries were found in the Sequencer database.",
+  "actor-jb2a-animations.warnings.noSequencer": "Sequencer is not active. The tab will save data, but playback macros will not work until Sequencer is enabled.",
+  "actor-jb2a-animations.warnings.noJB2A": "No active JB2A module was detected. You can still type a Sequencer database path manually.",
+  "actor-jb2a-animations.help.title": "Macro examples",
+  "actor-jb2a-animations.picker.title": "Pick JB2A Animation",
+  "actor-jb2a-animations.picker.hint": "Filter and pick a Sequencer database path beginning with jb2a."
+}
